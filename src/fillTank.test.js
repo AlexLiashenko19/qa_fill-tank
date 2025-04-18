@@ -20,7 +20,7 @@ describe('fillTank', () => {
   });
 
   // eslint-disable-next-line max-len
-  it('should pour only what will fit if the `amount` is greater than the tank can accommodate', () => {
+  it('should NOT pour if the amount that can be poured is less than 2 liters', () => {
     const customer = {
       money: 3000,
       vehicle: {
